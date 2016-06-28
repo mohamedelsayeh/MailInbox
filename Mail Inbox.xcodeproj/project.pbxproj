@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		104CC34C1D20C3AC0061B68C /* Mail_InboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104CC34B1D20C3AC0061B68C /* Mail_InboxTests.swift */; };
+		104F5B361D201D0A00BECE05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B2F1D201D0A00BECE05 /* AppDelegate.swift */; };
+		104F5B371D201D0A00BECE05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104F5B331D201D0A00BECE05 /* Assets.xcassets */; };
+		104F5B381D201D0A00BECE05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104F5B341D201D0A00BECE05 /* LaunchScreen.storyboard */; };
+		104F5B391D201D0A00BECE05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104F5B351D201D0A00BECE05 /* Main.storyboard */; };
+		104F5B3E1D201ED300BECE05 /* Mail_Inpox.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B3C1D201ED300BECE05 /* Mail_Inpox.xcdatamodeld */; };
+		104F5B441D20233000BECE05 /* EmailDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B431D20233000BECE05 /* EmailDAO.swift */; };
+		104F5B471D20240A00BECE05 /* Email+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B451D20240A00BECE05 /* Email+CoreDataProperties.swift */; };
+		104F5B481D20240A00BECE05 /* Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B461D20240A00BECE05 /* Email.swift */; };
+		104F5B4B1D202E3D00BECE05 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B4A1D202E3D00BECE05 /* NetworkManager.swift */; };
+		104F5B4E1D202F6800BECE05 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B4D1D202F6800BECE05 /* InboxTableViewController.swift */; };
+		104F5B511D202F9400BECE05 /* InboxViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104F5B501D202F9400BECE05 /* InboxViewDelegate.swift */; };
+		10FE26941D207DCD0051A104 /* EmailDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FE26931D207DCC0051A104 /* EmailDetailsViewController.swift */; };
+		BA8331C369B16F4A3B45A455 /* Pods_Mail_Inbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45D37FF5B988ED6F275302F /* Pods_Mail_Inbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		104CC34E1D20C3AC0061B68C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 104F5B001D20193A00BECE05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 104F5B071D20193A00BECE05;
+			remoteInfo = "Mail Inbox";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		104CC3491D20C3AC0061B68C /* Mail InboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mail InboxTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		104CC34B1D20C3AC0061B68C /* Mail_InboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mail_InboxTests.swift; sourceTree = "<group>"; };
+		104CC34D1D20C3AC0061B68C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104F5B081D20193A00BECE05 /* Mail Inbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mail Inbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		104F5B1A1D20193B00BECE05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		104F5B2F1D201D0A00BECE05 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		104F5B331D201D0A00BECE05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		104F5B341D201D0A00BECE05 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		104F5B351D201D0A00BECE05 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		104F5B3D1D201ED300BECE05 /* Mail_Inpox.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mail_Inpox.xcdatamodel; sourceTree = "<group>"; };
+		104F5B431D20233000BECE05 /* EmailDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDAO.swift; sourceTree = "<group>"; };
+		104F5B451D20240A00BECE05 /* Email+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Email+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		104F5B461D20240A00BECE05 /* Email.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Email.swift; sourceTree = "<group>"; };
+		104F5B4A1D202E3D00BECE05 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		104F5B4D1D202F6800BECE05 /* InboxTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
+		104F5B501D202F9400BECE05 /* InboxViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewDelegate.swift; sourceTree = "<group>"; };
+		10FE26931D207DCC0051A104 /* EmailDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDetailsViewController.swift; sourceTree = "<group>"; };
+		10FE26951D2089F70051A104 /* InboxTableViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxTableViewControllerTest.swift; sourceTree = "<group>"; };
+		1D912F830D326D980EDAFA88 /* Pods-Mail Inbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mail Inbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mail Inbox/Pods-Mail Inbox.release.xcconfig"; sourceTree = "<group>"; };
+		33CD1DC4CFCF3F1A3073FC9F /* Pods-Mail InboxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mail InboxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mail InboxTests/Pods-Mail InboxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E3DC2AF2D138F5D0E815CAAD /* Pods-Mail InboxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mail InboxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mail InboxTests/Pods-Mail InboxTests.release.xcconfig"; sourceTree = "<group>"; };
+		E45D37FF5B988ED6F275302F /* Pods_Mail_Inbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mail_Inbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C19A9D8D5F7CA7DD49AA1F /* Pods_Mail_InboxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mail_InboxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF9896317F9FE6C94A44B31E /* Pods-Mail Inbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mail Inbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mail Inbox/Pods-Mail Inbox.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		104CC3461D20C3AC0061B68C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104F5B051D20193A00BECE05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA8331C369B16F4A3B45A455 /* Pods_Mail_Inbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		104CC34A1D20C3AC0061B68C /* Mail InboxTests */ = {
+			isa = PBXGroup;
+			children = (
+				104CC34B1D20C3AC0061B68C /* Mail_InboxTests.swift */,
+				104CC34D1D20C3AC0061B68C /* Info.plist */,
+			);
+			path = "Mail InboxTests";
+			sourceTree = "<group>";
+		};
+		104F5AFF1D20193A00BECE05 = {
+			isa = PBXGroup;
+			children = (
+				104F5B0A1D20193A00BECE05 /* Mail Inbox */,
+				104CC34A1D20C3AC0061B68C /* Mail InboxTests */,
+				104F5B091D20193A00BECE05 /* Products */,
+				CCB17F19BB963F24BBDCFCB8 /* Pods */,
+				24B74E7F757C54AD6D0D42DF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		104F5B091D20193A00BECE05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B081D20193A00BECE05 /* Mail Inbox.app */,
+				104CC3491D20C3AC0061B68C /* Mail InboxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		104F5B0A1D20193A00BECE05 /* Mail Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B491D202E3200BECE05 /* WebService */,
+				104F5B2E1D201D0A00BECE05 /* AppDelegate */,
+				104F5B301D201D0A00BECE05 /* Controller */,
+				104F5B311D201D0A00BECE05 /* Model */,
+				104F5B321D201D0A00BECE05 /* View */,
+				104F5B1A1D20193B00BECE05 /* Info.plist */,
+			);
+			name = "Mail Inbox";
+			path = "Mail Inpox";
+			sourceTree = "<group>";
+		};
+		104F5B2E1D201D0A00BECE05 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B2F1D201D0A00BECE05 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		104F5B301D201D0A00BECE05 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B4F1D202F7700BECE05 /* EmailDetailsView */,
+				104F5B4C1D202F6800BECE05 /* InboxView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		104F5B311D201D0A00BECE05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B451D20240A00BECE05 /* Email+CoreDataProperties.swift */,
+				104F5B461D20240A00BECE05 /* Email.swift */,
+				104F5B431D20233000BECE05 /* EmailDAO.swift */,
+				104F5B3C1D201ED300BECE05 /* Mail_Inpox.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		104F5B321D201D0A00BECE05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B331D201D0A00BECE05 /* Assets.xcassets */,
+				104F5B341D201D0A00BECE05 /* LaunchScreen.storyboard */,
+				104F5B351D201D0A00BECE05 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		104F5B491D202E3200BECE05 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B4A1D202E3D00BECE05 /* NetworkManager.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		104F5B4C1D202F6800BECE05 /* InboxView */ = {
+			isa = PBXGroup;
+			children = (
+				104F5B4D1D202F6800BECE05 /* InboxTableViewController.swift */,
+				104F5B501D202F9400BECE05 /* InboxViewDelegate.swift */,
+				10FE26951D2089F70051A104 /* InboxTableViewControllerTest.swift */,
+			);
+			path = InboxView;
+			sourceTree = "<group>";
+		};
+		104F5B4F1D202F7700BECE05 /* EmailDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				10FE26931D207DCC0051A104 /* EmailDetailsViewController.swift */,
+			);
+			path = EmailDetailsView;
+			sourceTree = "<group>";
+		};
+		24B74E7F757C54AD6D0D42DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E45D37FF5B988ED6F275302F /* Pods_Mail_Inbox.framework */,
+				F4C19A9D8D5F7CA7DD49AA1F /* Pods_Mail_InboxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCB17F19BB963F24BBDCFCB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF9896317F9FE6C94A44B31E /* Pods-Mail Inbox.debug.xcconfig */,
+				1D912F830D326D980EDAFA88 /* Pods-Mail Inbox.release.xcconfig */,
+				33CD1DC4CFCF3F1A3073FC9F /* Pods-Mail InboxTests.debug.xcconfig */,
+				E3DC2AF2D138F5D0E815CAAD /* Pods-Mail InboxTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		104CC3481D20C3AC0061B68C /* Mail InboxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104CC3501D20C3AC0061B68C /* Build configuration list for PBXNativeTarget "Mail InboxTests" */;
+			buildPhases = (
+				104CC3451D20C3AC0061B68C /* Sources */,
+				104CC3461D20C3AC0061B68C /* Frameworks */,
+				104CC3471D20C3AC0061B68C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				104CC34F1D20C3AC0061B68C /* PBXTargetDependency */,
+			);
+			name = "Mail InboxTests";
+			productName = "Mail InboxTests";
+			productReference = 104CC3491D20C3AC0061B68C /* Mail InboxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		104F5B071D20193A00BECE05 /* Mail Inbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 104F5B281D20193B00BECE05 /* Build configuration list for PBXNativeTarget "Mail Inbox" */;
+			buildPhases = (
+				799245F7F729BC9731DA623C /* [CP] Check Pods Manifest.lock */,
+				104F5B041D20193A00BECE05 /* Sources */,
+				104F5B051D20193A00BECE05 /* Frameworks */,
+				104F5B061D20193A00BECE05 /* Resources */,
+				22DB1588901BE6B12A37044A /* [CP] Embed Pods Frameworks */,
+				E513B1E68E5A1A709DCA15DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mail Inbox";
+			productName = "Mail Inpox";
+			productReference = 104F5B081D20193A00BECE05 /* Mail Inbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		104F5B001D20193A00BECE05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Good News 4 Me";
+				TargetAttributes = {
+					104CC3481D20C3AC0061B68C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 104F5B071D20193A00BECE05;
+					};
+					104F5B071D20193A00BECE05 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 104F5B031D20193A00BECE05 /* Build configuration list for PBXProject "Mail Inbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 104F5AFF1D20193A00BECE05;
+			productRefGroup = 104F5B091D20193A00BECE05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				104F5B071D20193A00BECE05 /* Mail Inbox */,
+				104CC3481D20C3AC0061B68C /* Mail InboxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		104CC3471D20C3AC0061B68C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104F5B061D20193A00BECE05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F5B371D201D0A00BECE05 /* Assets.xcassets in Resources */,
+				104F5B391D201D0A00BECE05 /* Main.storyboard in Resources */,
+				104F5B381D201D0A00BECE05 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22DB1588901BE6B12A37044A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mail Inbox/Pods-Mail Inbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		799245F7F729BC9731DA623C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E513B1E68E5A1A709DCA15DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mail Inbox/Pods-Mail Inbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		104CC3451D20C3AC0061B68C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104CC34C1D20C3AC0061B68C /* Mail_InboxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		104F5B041D20193A00BECE05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				104F5B511D202F9400BECE05 /* InboxViewDelegate.swift in Sources */,
+				104F5B4E1D202F6800BECE05 /* InboxTableViewController.swift in Sources */,
+				104F5B441D20233000BECE05 /* EmailDAO.swift in Sources */,
+				104F5B361D201D0A00BECE05 /* AppDelegate.swift in Sources */,
+				104F5B481D20240A00BECE05 /* Email.swift in Sources */,
+				104F5B4B1D202E3D00BECE05 /* NetworkManager.swift in Sources */,
+				104F5B471D20240A00BECE05 /* Email+CoreDataProperties.swift in Sources */,
+				10FE26941D207DCD0051A104 /* EmailDetailsViewController.swift in Sources */,
+				104F5B3E1D201ED300BECE05 /* Mail_Inpox.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		104CC34F1D20C3AC0061B68C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 104F5B071D20193A00BECE05 /* Mail Inbox */;
+			targetProxy = 104CC34E1D20C3AC0061B68C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		104CC3511D20C3AC0061B68C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mail InboxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GN4ME.Mail-InboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mail Inbox.app/Mail Inbox";
+			};
+			name = Debug;
+		};
+		104CC3521D20C3AC0061B68C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Mail InboxTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GN4ME.Mail-InboxTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mail Inbox.app/Mail Inbox";
+			};
+			name = Release;
+		};
+		104F5B261D20193B00BECE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		104F5B271D20193B00BECE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		104F5B291D20193B00BECE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9896317F9FE6C94A44B31E /* Pods-Mail Inbox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "Mail Inpox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GN4ME.Mail-Inbox";
+				PRODUCT_NAME = "Mail Inbox";
+			};
+			name = Debug;
+		};
+		104F5B2A1D20193B00BECE05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D912F830D326D980EDAFA88 /* Pods-Mail Inbox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = "Mail Inpox/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GN4ME.Mail-Inbox";
+				PRODUCT_NAME = "Mail Inbox";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		104CC3501D20C3AC0061B68C /* Build configuration list for PBXNativeTarget "Mail InboxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104CC3511D20C3AC0061B68C /* Debug */,
+				104CC3521D20C3AC0061B68C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		104F5B031D20193A00BECE05 /* Build configuration list for PBXProject "Mail Inbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104F5B261D20193B00BECE05 /* Debug */,
+				104F5B271D20193B00BECE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		104F5B281D20193B00BECE05 /* Build configuration list for PBXNativeTarget "Mail Inbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				104F5B291D20193B00BECE05 /* Debug */,
+				104F5B2A1D20193B00BECE05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		104F5B3C1D201ED300BECE05 /* Mail_Inpox.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				104F5B3D1D201ED300BECE05 /* Mail_Inpox.xcdatamodel */,
+			);
+			currentVersion = 104F5B3D1D201ED300BECE05 /* Mail_Inpox.xcdatamodel */;
+			path = Mail_Inpox.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 104F5B001D20193A00BECE05 /* Project object */;
+}
